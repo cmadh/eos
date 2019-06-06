@@ -213,7 +213,7 @@ struct faucet_testnet_plugin_impl {
 
       chain::chain_id_type chainid;
       auto& plugin = _app.get_plugin<chain_plugin>();
-      plugin.get_chain_id(chainid);
+      plugin.get_chain_id();
       controller& cc = plugin.chain();
 
       signed_transaction trx;
